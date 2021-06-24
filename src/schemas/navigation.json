@@ -1,0 +1,109 @@
+{
+  "Main": {
+    "uid": {
+      "type": "UID",
+      "config": {
+        "label": "uid"
+      }
+    },
+    "main_meta_info_seo": {
+      "type": "StructuredText",
+      "config": {
+        "multi": "paragraph",
+        "label": "Main Meta Info SEO"
+      }
+    },
+    "navigation_logo": {
+      "type": "Image",
+      "config": {
+        "constraint": {},
+        "thumbnails": [],
+        "label": "Navigation Logo"
+      }
+    },
+    "menu_item_1": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph",
+        "label": "Menu Item I"
+      }
+    },
+    "menu_item_link_1": {
+      "type": "Link",
+      "config": {
+        "label": "Menu Item Link I",
+        "allowTargetBlank": true
+      }
+    },
+    "menu_item_2": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph",
+        "label": "Menu Item II"
+      }
+    },
+    "menu_item_link_2": {
+      "type": "Link",
+      "config": {
+        "label": "Menu Item Link II",
+        "allowTargetBlank": true
+      }
+    },
+    "menu_item_3": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph",
+        "label": "Menu Item III"
+      }
+    },
+    "menu_item_link_3": {
+      "type": "Link",
+      "config": {
+        "label": "Menu Item Link III",
+        "allowTargetBlank": true
+      }
+    },
+    "menu_item_4": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph",
+        "label": "Menu Item IV"
+      }
+    },
+    "menu_item_link_4": {
+      "type": "Link",
+      "config": {
+        "label": "Menu Item Link IV",
+        "allowTargetBlank": true
+      }
+    },
+    "menu_item_5": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph",
+        "label": "Menu Item V"
+      }
+    },
+    "menu_item_link_5": {
+      "type": "Link",
+      "config": {
+        "label": "Menu Item Link V",
+        "allowTargetBlank": true
+      }
+    },
+    "menu_item_6": {
+      "type": "StructuredText",
+      "config": {
+        "single": "paragraph",
+        "label": "Menu Item VI"
+      }
+    },
+    "menu_item_link_6": {
+      "type": "Link",
+      "config": {
+        "label": "Menu Item Link VI",
+        "allowTargetBlank": true
+      }
+    }
+  }
+}

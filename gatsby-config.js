@@ -1,3 +1,9 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -14,8 +20,32 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: 'gatsby-source-prismic',
+      options: {
+        repositoryName: 'old-gear',
+        accessToken: `${process.env.PRISMIC_API_KEY}`, 
+        shouldDownloadImage: () => true,
+        schemas: {
+          navigation: require('./src/schemas/navigation.json'),
+        },
+      },
+    },
     `gatsby-transformer-sharp`,
+    {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        src: path.join(__dirname, 'src'),
+        static: path.join(__dirname, 'static'),
+        functions: path.join(__dirname, 'src/utils/functions'),
+        styles: path.join(__dirname, 'src/utils/styles'),
+        components: path.join(__dirname, 'src/components'),
+      },
+    },
     `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-emotion`,
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
